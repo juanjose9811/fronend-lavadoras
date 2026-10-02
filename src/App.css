@@ -1,0 +1,124 @@
+/* Estilos Generales del Contenedor */
+.app-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+/* Barra de Accesibilidad */
+.accesibilidad-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.accesibilidad-bar button {
+  padding: 8px 14px;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Panel de Formulario */
+.card-panel {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+}
+
+.form-lavadora {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-lavadora input, .input-buscar {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex: 1;
+  min-width: 150px;
+}
+
+/* Botones de Acción */
+.btn-guardar {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-eliminar {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.search-section {
+  margin-bottom: 20px;
+}
+
+/* Grilla de Productos */
+.grid-lavadoras {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card-lavadora {
+  border: 1px solid #ccc;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Reglas de Alto Contraste */
+.alto-contraste {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+}
+
+.alto-contraste .card-panel,
+.alto-contraste .card-lavadora {
+  background-color: #111111 !important;
+  border-color: #ffff00 !important;
+  color: #ffff00 !important;
+}
+
+.alto-contraste input {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border-color: #ffff00 !important;
+}
+
+.alto-contraste button,
+.alto-contraste .btn-guardar {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  border-color: #ffff00 !important;
+}
+
+.alto-contraste .btn-eliminar {
+  background-color: #ff0000 !important;
+  color: #ffffff !important;
+}
